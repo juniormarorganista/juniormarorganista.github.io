@@ -28,9 +28,14 @@ do artigo (Oldroyd-B, Wi = 1, β = 0,5), publicado sob CC BY 4.0.
 ## Como atualizar
 
 1. Mude o texto nas **duas** versões, `index.html` e `en/index.html`.
-2. Abra `index.html` no navegador e confira, também numa janela estreita.
-3. Atualize a data do rodapé nas duas.
-4. Commit e push na `main`: o GitHub Pages publica em um ou dois minutos.
+2. Mudou o `estilo.css`? Aumente o número em `estilo.css?v=` nas duas páginas. O
+   GitHub Pages manda o navegador guardar o CSS por 10 minutos; sem o número novo,
+   quem já visitou o site recebe o HTML novo com o CSS antigo, e a página desmonta.
+   Vale o mesmo para uma imagem que mude sem mudar de nome.
+3. Abra `index.html` no navegador e confira em tela larga (1920 px), em notebook
+   (1366 px) e numa janela estreita.
+4. Atualize a data do rodapé nas duas.
+5. Commit e push na `main`: o GitHub Pages publica em um ou dois minutos.
 
 Para ver localmente com os links relativos funcionando como no ar:
 
