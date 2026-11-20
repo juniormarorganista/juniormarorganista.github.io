@@ -11,18 +11,26 @@
   <link rel="alternate" hreflang="x-default" href="https://juniormarorganista.github.io/">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="estilo.css">
+  <meta name="theme-color" content="#f7f5f0" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#101318" media="(prefers-color-scheme: dark)">
   <meta property="og:type" content="profile">
   <meta property="og:title" content="Juniormar Organista">
   <meta property="og:description" content="Matemático aplicado: verificação de código numérico, pós-doutorado na UEL e ciência de dados em risco de crédito.">
   <meta property="og:url" content="https://juniormarorganista.github.io/">
+  <meta property="og:image" content="https://juniormarorganista.github.io/img/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Juniormar Organista, matemático aplicado, sobre linhas de corrente de uma solução manufaturada">
   <meta property="og:locale" content="pt_BR">
   <meta property="og:locale:alternate" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Juniormar Organista",
     "url": "https://juniormarorganista.github.io/",
+    "image": "https://juniormarorganista.github.io/img/retrato.webp",
     "jobTitle": "Matemático aplicado",
     "affiliation": {"@type": "CollegeOrUniversity", "name": "Universidade Estadual de Londrina"},
     "alumniOf": [
@@ -42,80 +50,202 @@
 </head>
 <body>
   <a class="pular" href="#conteudo">Ir para o conteúdo</a>
-  <div class="pagina">
-    <nav class="idioma" aria-label="Idioma">
-      <a href="en/" hreflang="en" lang="en">English</a>
+
+  <header class="conteiner barra">
+    <a class="marca" href="./">Juniormar Organista</a>
+    <nav aria-label="Seções">
+      <a href="#sobre">Sobre</a>
+      <a href="#pesquisa">Pesquisa</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#artigos">Artigos</a>
     </nav>
+    <a class="idioma" href="en/" hreflang="en" lang="en" title="English version">EN</a>
+  </header>
 
-    <header>
-      <h1>Juniormar Organista</h1>
-      <p class="papel">Matemático aplicado. Verificação de código numérico, pós-doutorado na UEL e ciência de dados em risco de crédito.</p>
-      <ul class="perfis" aria-label="Perfis">
-        <li><a rel="me" href="https://www.linkedin.com/in/juniormar-organista-1762802a">LinkedIn</a></li>
-        <li><a rel="me" href="http://lattes.cnpq.br/1314750070962728">Lattes</a></li>
-        <li><a rel="me" href="https://orcid.org/0000-0002-3627-6901">ORCID</a></li>
-        <li><a rel="me" href="https://github.com/juniormarorganista">GitHub</a></li>
-      </ul>
-    </header>
-
-    <main id="conteudo">
-      <section aria-labelledby="sobre">
-        <h2 id="sobre">Sobre</h2>
-        <p>Sou matemático aplicado. No doutorado, no ICMC/USP, verifiquei um solver de alta ordem para escoamentos viscoelásticos pelo método das soluções manufaturadas: escolhe-se uma solução exata, calcula-se o termo-fonte que faz dela solução do problema e confere-se se o erro cai, à medida que a malha é refinada, na taxa que o esquema promete. O resultado saiu em 2026 no <cite>International Journal for Numerical Methods in Fluids</cite>, em acesso aberto, e o código e os dados estão publicados.</p>
-        <p>Desde 2026 faço pós-doutorado no Programa de Pós-Graduação em Matemática Aplicada e Computacional da UEL, com supervisão do Prof. Paulo Laerte Natti, usando o mesmo instrumento para comparar diferenças finitas e solvers neurais de equações diferenciais parciais. Desde maio de 2026 também sou cientista de dados em risco de crédito numa instituição financeira cooperativa, onde desenvolvo, valido e monitoro modelos de score e rating.</p>
-        <p>Antes disso, dei aulas de Estatística na UFSCar e de Matemática no IFG, fui tutor na UNIVESP e trabalhei na FIPAI, em projeto de cooperação com a Petrobras, desenvolvendo e validando software científico.</p>
-      </section>
-
-      <section aria-labelledby="formacao">
-        <h2 id="formacao">Formação</h2>
-        <ul class="formacao">
-          <li><span>Pós-doutorado em Matemática Aplicada e Computacional, UEL</span> <span class="periodo">desde 2026</span></li>
-          <li><span>Doutorado em Ciências de Computação e Matemática Computacional, ICMC/USP</span> <span class="periodo">2018 a 2025</span></li>
-          <li><span>Mestrado em Matemática Aplicada e Computacional, UEL</span> <span class="periodo">2016 a 2018</span></li>
-          <li><span>Licenciatura em Matemática, Centro Universitário ETEP</span> <span class="periodo">2022 a 2026</span></li>
-          <li><span>Bacharelado em Matemática, UEM</span> <span class="periodo">2009 a 2013</span></li>
+  <section class="abertura" aria-labelledby="nome">
+    <div class="arte" aria-hidden="true"></div>
+    <div class="conteiner">
+      <img class="retrato" src="img/retrato.webp" width="168" height="168" alt="Retrato de Juniormar Organista">
+      <div>
+        <p class="sobretitulo">Matemática aplicada · Computação científica · Dados</p>
+        <h1 id="nome">Juniormar Organista</h1>
+        <p class="chamada">Pesquiso como saber se um código de simulação resolve de fato as equações que diz resolver. Pós-doutorando na UEL e cientista de dados em risco de crédito.</p>
+        <ul class="perfis" aria-label="Perfis">
+          <li><a rel="me" href="https://www.linkedin.com/in/juniormar-organista-1762802a">LinkedIn</a></li>
+          <li><a rel="me" href="http://lattes.cnpq.br/1314750070962728">Lattes</a></li>
+          <li><a rel="me" href="https://orcid.org/0000-0002-3627-6901">ORCID</a></li>
+          <li><a rel="me" href="https://github.com/juniormarorganista">GitHub</a></li>
         </ul>
-      </section>
+      </div>
+    </div>
+  </section>
 
-      <section aria-labelledby="artigos">
-        <h2 id="artigos">Artigos</h2>
+  <main id="conteudo">
+    <section class="secao" id="sobre" aria-labelledby="titulo-sobre">
+      <div class="conteiner">
+        <h2 id="titulo-sobre">Sobre</h2>
+        <div class="duas-colunas">
+          <div class="texto-corrido">
+            <p>Sou matemático aplicado. No doutorado, no ICMC/USP, verifiquei um solver de alta ordem para escoamentos viscoelásticos pelo método das soluções manufaturadas: escolhe-se uma solução exata, calcula-se o termo-fonte que faz dela solução do problema e confere-se se o erro cai, à medida que a malha é refinada, na taxa que o esquema promete. O resultado saiu em 2026 no <cite>International Journal for Numerical Methods in Fluids</cite>, em acesso aberto, e o código e os dados estão publicados.</p>
+            <p>Desde 2026 faço pós-doutorado no Programa de Pós-Graduação em Matemática Aplicada e Computacional da UEL, com supervisão do Prof. Paulo Laerte Natti, usando o mesmo instrumento para comparar diferenças finitas e solvers neurais de equações diferenciais parciais. Desde maio de 2026 também sou cientista de dados em risco de crédito numa instituição financeira cooperativa, onde desenvolvo, valido e monitoro modelos de score e rating.</p>
+            <p>Antes disso, dei aulas de Estatística na UFSCar e de Matemática no IFG, fui tutor na UNIVESP e trabalhei na FIPAI, em projeto de cooperação com a Petrobras, desenvolvendo e validando software científico.</p>
+          </div>
+          <aside aria-labelledby="titulo-formacao">
+            <p class="subtitulo" id="titulo-formacao">Formação</p>
+            <ol class="linha-do-tempo">
+              <li><span class="periodo">desde 2026</span><span class="grau">Pós-doutorado</span><span class="lugar">Matemática Aplicada e Computacional, UEL</span></li>
+              <li><span class="periodo">2018 a 2025</span><span class="grau">Doutorado</span><span class="lugar">Ciências de Computação e Matemática Computacional, ICMC/USP</span></li>
+              <li><span class="periodo">2016 a 2018</span><span class="grau">Mestrado</span><span class="lugar">Matemática Aplicada e Computacional, UEL</span></li>
+              <li><span class="periodo">2022 a 2026</span><span class="grau">Licenciatura em Matemática</span><span class="lugar">Centro Universitário ETEP</span></li>
+              <li><span class="periodo">2009 a 2013</span><span class="grau">Bacharelado em Matemática</span><span class="lugar">Universidade Estadual de Maringá</span></li>
+            </ol>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao" id="pesquisa" aria-labelledby="titulo-pesquisa">
+      <div class="conteiner">
+        <h2 id="titulo-pesquisa">Pesquisa em destaque</h2>
+        <article class="cartao pesquisa">
+          <div>
+            <span class="selo">acesso aberto · CC BY 4.0</span>
+            <h3>Verificação de um solver de escoamentos viscoelásticos</h3>
+            <p>Sem solução analítica para comparar, uma simulação viscoelástica que parece certa pode estar resolvendo a equação errada. O método das soluções manufaturadas inverte a ordem: escolhe-se a resposta, deriva-se o termo-fonte que a torna exata e mede-se o erro em malhas cada vez mais finas. O artigo faz isso para os modelos de Oldroyd-B e Giesekus, num esquema compacto de diferenças finitas de alta ordem.</p>
+            <p class="citacao">Organista, J.; Souza, L. F.; Fernandes, C.; Costa, W. L.; Silva, A. T. G. da; Castelo, A. <cite>Verification of an Incompressible Viscoelastic Flow Solver Using the Method of Manufactured Solutions for Oldroyd-B and Giesekus Constitutive Models</cite>. International Journal for Numerical Methods in Fluids, v. 98, n. 12, p. 1384-1422, 2026.</p>
+            <div class="botoes">
+              <a class="botao" href="https://doi.org/10.1002/fld.70096">Ler o artigo</a>
+              <a class="botao secundario" href="https://github.com/juniormarorganista/PhD-Thesis-Organista-J-USP">Código e dados</a>
+            </div>
+          </div>
+          <figure class="figura-grafico">
+<ul class="legenda" aria-hidden="true"><li><span class="amostra s1"></span>Re = 1</li><li><span class="amostra s2"></span>Re = 1000</li><li><span class="amostra ref"></span>quarta ordem</li></ul>
+<svg class="grafico" viewBox="0 0 560 380" role="img" aria-labelledby="graf-tit-pt graf-desc-pt">
+<title id="graf-tit-pt">Erro da vorticidade com o refinamento da malha, modelo de Oldroyd-B</title>
+<desc id="graf-desc-pt">Gráfico em escala logarítmica: o erro da vorticidade cai de cerca de 2 × 10⁻³ para menos de 10⁻⁶ quando a malha passa de 16 para 128 intervalos, acompanhando a reta de quarta ordem.</desc>
+<line class="grade" x1="66" x2="476" y1="328.0" y2="328.0"/>
+<text class="rotulo" x="56" y="332.0" text-anchor="end">10<tspan dy='-6' font-size='10'>-7</tspan></text>
+<line class="grade" x1="66" x2="476" y1="265.2" y2="265.2"/>
+<text class="rotulo" x="56" y="269.2" text-anchor="end">10<tspan dy='-6' font-size='10'>-6</tspan></text>
+<line class="grade" x1="66" x2="476" y1="202.4" y2="202.4"/>
+<text class="rotulo" x="56" y="206.4" text-anchor="end">10<tspan dy='-6' font-size='10'>-5</tspan></text>
+<line class="grade" x1="66" x2="476" y1="139.6" y2="139.6"/>
+<text class="rotulo" x="56" y="143.6" text-anchor="end">10<tspan dy='-6' font-size='10'>-4</tspan></text>
+<line class="grade" x1="66" x2="476" y1="76.8" y2="76.8"/>
+<text class="rotulo" x="56" y="80.8" text-anchor="end">10<tspan dy='-6' font-size='10'>-3</tspan></text>
+<line class="grade" x1="66" x2="476" y1="14.0" y2="14.0"/>
+<text class="rotulo" x="56" y="18.0" text-anchor="end">10<tspan dy='-6' font-size='10'>-2</tspan></text>
+<line class="marca" x1="66.0" x2="66.0" y1="328" y2="333"/>
+<text class="rotulo" x="66.0" y="348" text-anchor="middle">16</text>
+<line class="marca" x1="202.7" x2="202.7" y1="328" y2="333"/>
+<text class="rotulo" x="202.7" y="348" text-anchor="middle">32</text>
+<line class="marca" x1="339.3" x2="339.3" y1="328" y2="333"/>
+<text class="rotulo" x="339.3" y="348" text-anchor="middle">64</text>
+<line class="marca" x1="476.0" x2="476.0" y1="328" y2="333"/>
+<text class="rotulo" x="476.0" y="348" text-anchor="middle">128</text>
+<line class="eixo" x1="66" x2="476" y1="328" y2="328"/>
+<text class="rotulo" x="271" y="372" text-anchor="middle">intervalos da malha em cada direção (h = 1/n)</text>
+<text class="rotulo" transform="translate(16 171) rotate(-90)" text-anchor="middle">erro (norma L2)</text>
+<line class="referencia" x1="66.0" y1="100.2" x2="476.0" y2="327.0"/>
+<text class="rotulo" x="339.3" y="271.4" text-anchor="end">quarta ordem</text>
+<path class="serie s1" d="M66.0 56.8 L202.7 128.4 L282.6 177.4 L339.3 214.4 L383.3 243.3 L419.3 267.1 L449.7 287.2 L476.0 302.0"/>
+<g class="ponto s1"><title>Re = 1, h = 1/16: 2,08 × 10⁻³</title><circle class="alvo" cx="66.0" cy="56.8" r="11"/><circle cx="66.0" cy="56.8" r="4"/></g>
+<g class="ponto s1"><title>Re = 1, h = 1/32: 1,51 × 10⁻⁴</title><circle class="alvo" cx="202.7" cy="128.4" r="11"/><circle cx="202.7" cy="128.4" r="4"/></g>
+<g class="ponto s1"><title>Re = 1, h = 1/48: 2,50 × 10⁻⁵</title><circle class="alvo" cx="282.6" cy="177.4" r="11"/><circle cx="282.6" cy="177.4" r="4"/></g>
+<g class="ponto s1"><title>Re = 1, h = 1/64: 6,43 × 10⁻⁶</title><circle class="alvo" cx="339.3" cy="214.4" r="11"/><circle cx="339.3" cy="214.4" r="4"/></g>
+<g class="ponto s1"><title>Re = 1, h = 1/80: 2,23 × 10⁻⁶</title><circle class="alvo" cx="383.3" cy="243.3" r="11"/><circle cx="383.3" cy="243.3" r="4"/></g>
+<g class="ponto s1"><title>Re = 1, h = 1/96: 9,34 × 10⁻⁷</title><circle class="alvo" cx="419.3" cy="267.1" r="11"/><circle cx="419.3" cy="267.1" r="4"/></g>
+<g class="ponto s1"><title>Re = 1, h = 1/112: 4,47 × 10⁻⁷</title><circle class="alvo" cx="449.7" cy="287.2" r="11"/><circle cx="449.7" cy="287.2" r="4"/></g>
+<g class="ponto s1"><title>Re = 1, h = 1/128: 2,59 × 10⁻⁷</title><circle class="alvo" cx="476.0" cy="302.0" r="11"/><circle cx="476.0" cy="302.0" r="4"/></g>
+<text class="rotulo forte" x="486.0" y="306.0">Re = 1</text>
+<path class="serie s2" d="M66.0 54.4 L202.7 118.1 L282.6 157.4 L339.3 186.1 L383.3 208.9 L419.3 228.4 L449.7 245.6 L476.0 259.8"/>
+<g class="ponto s2"><title>Re = 1000, h = 1/16: 2,27 × 10⁻³</title><circle class="alvo" cx="66.0" cy="54.4" r="11"/><circle cx="66.0" cy="54.4" r="4"/></g>
+<g class="ponto s2"><title>Re = 1000, h = 1/32: 2,20 × 10⁻⁴</title><circle class="alvo" cx="202.7" cy="118.1" r="11"/><circle cx="202.7" cy="118.1" r="4"/></g>
+<g class="ponto s2"><title>Re = 1000, h = 1/48: 5,20 × 10⁻⁵</title><circle class="alvo" cx="282.6" cy="157.4" r="11"/><circle cx="282.6" cy="157.4" r="4"/></g>
+<g class="ponto s2"><title>Re = 1000, h = 1/64: 1,82 × 10⁻⁵</title><circle class="alvo" cx="339.3" cy="186.1" r="11"/><circle cx="339.3" cy="186.1" r="4"/></g>
+<g class="ponto s2"><title>Re = 1000, h = 1/80: 7,87 × 10⁻⁶</title><circle class="alvo" cx="383.3" cy="208.9" r="11"/><circle cx="383.3" cy="208.9" r="4"/></g>
+<g class="ponto s2"><title>Re = 1000, h = 1/96: 3,85 × 10⁻⁶</title><circle class="alvo" cx="419.3" cy="228.4" r="11"/><circle cx="419.3" cy="228.4" r="4"/></g>
+<g class="ponto s2"><title>Re = 1000, h = 1/112: 2,05 × 10⁻⁶</title><circle class="alvo" cx="449.7" cy="245.6" r="11"/><circle cx="449.7" cy="245.6" r="4"/></g>
+<g class="ponto s2"><title>Re = 1000, h = 1/128: 1,22 × 10⁻⁶</title><circle class="alvo" cx="476.0" cy="259.8" r="11"/><circle cx="476.0" cy="259.8" r="4"/></g>
+<text class="rotulo forte" x="486.0" y="263.8">Re = 1000</text>
+</svg>
+<details class="dados"><summary>Ver os dados</summary><table><thead><tr><th>n</th><th>Re = 1</th><th>Re = 1000</th></tr></thead><tbody><tr><td>16</td><td>2,08 × 10⁻³</td><td>2,27 × 10⁻³</td></tr><tr><td>32</td><td>1,51 × 10⁻⁴</td><td>2,20 × 10⁻⁴</td></tr><tr><td>48</td><td>2,50 × 10⁻⁵</td><td>5,20 × 10⁻⁵</td></tr><tr><td>64</td><td>6,43 × 10⁻⁶</td><td>1,82 × 10⁻⁵</td></tr><tr><td>80</td><td>2,23 × 10⁻⁶</td><td>7,87 × 10⁻⁶</td></tr><tr><td>96</td><td>9,34 × 10⁻⁷</td><td>3,85 × 10⁻⁶</td></tr><tr><td>112</td><td>4,47 × 10⁻⁷</td><td>2,05 × 10⁻⁶</td></tr><tr><td>128</td><td>2,59 × 10⁻⁷</td><td>1,22 × 10⁻⁶</td></tr></tbody></table></details>
+            <figcaption>Erro da vorticidade com o modelo de Oldroyd-B (Wi = 1, β = 0,5). Com Re = 1 a ordem observada chega a 4,8; com Re = 1000 sobe de 3,4 para 4,1 à medida que a malha é refinada. Dados do próprio artigo; o valor de cada ponto aparece ao passar o cursor.</figcaption>
+          </figure>
+        </article>
+      </div>
+    </section>
+
+    <section class="secao" id="projetos" aria-labelledby="titulo-projetos">
+      <div class="conteiner">
+        <h2 id="titulo-projetos">Projetos abertos</h2>
+        <div class="projetos">
+          <article class="cartao projeto">
+            <div class="imagem">
+              <img src="img/vorticidade.webp" width="600" height="600" loading="lazy" alt="Mapa de cores da vorticidade exata de uma solução manufaturada da tese, com linhas de corrente em branco">
+            </div>
+            <div class="corpo">
+              <h3><a href="https://github.com/juniormarorganista/PhD-Thesis-Organista-J-USP">Código e dados da tese</a></h3>
+              <p>Os programas de referência em Fortran, uma biblioteca Python que reproduz o solver de quarta ordem até a precisão de máquina, 508 testes automatizados e conjuntos de dados prontos para aprendizado de máquina. É o material que sustenta o artigo de 2026.</p>
+              <ul class="etiquetas" aria-label="Tecnologias">
+                <li>Fortran</li><li>Python</li><li>NumPy</li><li>pytest</li>
+              </ul>
+            </div>
+          </article>
+          <article class="cartao projeto">
+            <div class="imagem janela">
+              <img src="img/ces-janela.png" width="410" height="258" loading="lazy" alt="Janela do CES com entrada às 08:00, almoço das 12:00 às 13:00, jornada de 8 horas e saída prevista às 17:00">
+            </div>
+            <div class="corpo">
+              <h3><a href="https://github.com/juniormarorganista/CES-Controle-Entradas-Saidas">CES - Controle de Entradas e Saídas</a></h3>
+              <p>Calculadora de horário de saída para Windows, que avisa antes de a jornada se completar para evitar hora extra. Executável de menos de 50 KB, sem instalação e sem acesso à rede. O repositório traz scripts para auditar o que o binário é capaz de fazer e para conferir que ele saiu do código publicado.</p>
+              <ul class="etiquetas" aria-label="Tecnologias">
+                <li>C#</li><li>.NET Framework</li><li>Windows</li><li>licença MIT</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao" id="artigos" aria-labelledby="titulo-artigos">
+      <div class="conteiner">
+        <h2 id="titulo-artigos">Artigos</h2>
         <ul class="artigos">
           <li>
-            <span class="autores"><strong>Organista, J.</strong>; Souza, L. F.; Fernandes, C.; Costa, W. L.; Silva, A. T. G. da; Castelo, A.</span>
-            <span class="titulo">Verification of an Incompressible Viscoelastic Flow Solver Using the Method of Manufactured Solutions for Oldroyd-B and Giesekus Constitutive Models</span>
-            <span class="fonte"><cite>International Journal for Numerical Methods in Fluids</cite>, v. 98, n. 12, p. 1384-1422, 2026. <a href="https://doi.org/10.1002/fld.70096">doi:10.1002/fld.70096</a><span class="selo">acesso aberto</span></span>
+            <span class="ano">2026</span>
+            <div>
+              <span class="autores"><strong>Organista, J.</strong>; Souza, L. F.; Fernandes, C.; Costa, W. L.; Silva, A. T. G. da; Castelo, A.</span>
+              <span class="titulo">Verification of an Incompressible Viscoelastic Flow Solver Using the Method of Manufactured Solutions for Oldroyd-B and Giesekus Constitutive Models</span>
+              <span class="fonte"><cite>International Journal for Numerical Methods in Fluids</cite>, v. 98, n. 12, p. 1384-1422. <a href="https://doi.org/10.1002/fld.70096">doi:10.1002/fld.70096</a><span class="selo">acesso aberto</span></span>
+            </div>
           </li>
           <li>
-            <span class="autores">Silva, A. T. G. da; Fernandes, C.; <strong>Organista, J.</strong>; Souza, L.; Castelo, A.</span>
-            <span class="titulo">Validation of HiG-Flow Software for Simulating Two-Phase Flows with a 3D Geometric Volume of Fluid Algorithm</span>
-            <span class="fonte"><cite>Mathematics</cite>, v. 11, 3900, 2023. <a href="https://doi.org/10.3390/math11183900">doi:10.3390/math11183900</a></span>
+            <span class="ano">2023</span>
+            <div>
+              <span class="autores">Silva, A. T. G. da; Fernandes, C.; <strong>Organista, J.</strong>; Souza, L.; Castelo, A.</span>
+              <span class="titulo">Validation of HiG-Flow Software for Simulating Two-Phase Flows with a 3D Geometric Volume of Fluid Algorithm</span>
+              <span class="fonte"><cite>Mathematics</cite>, v. 11, 3900. <a href="https://doi.org/10.3390/math11183900">doi:10.3390/math11183900</a></span>
+            </div>
           </li>
           <li>
-            <span class="autores">Luiz, K. S.; <strong>Organista, J.</strong>; Cirilo, E. R.; Romeiro, N. M. L.; Natti, P. L.</span>
-            <span class="titulo">Numerical convergence of a Telegraph Predator-Prey system</span>
-            <span class="fonte"><cite>Semina: Ciências Exatas e Tecnológicas</cite>, v. 43, n. 1, p. 51-66, 2022. <a href="https://doi.org/10.5433/1679-0375.2022v43n1espp51">doi:10.5433/1679-0375.2022v43n1espp51</a></span>
+            <span class="ano">2022</span>
+            <div>
+              <span class="autores">Luiz, K. S.; <strong>Organista, J.</strong>; Cirilo, E. R.; Romeiro, N. M. L.; Natti, P. L.</span>
+              <span class="titulo">Numerical convergence of a Telegraph Predator-Prey system</span>
+              <span class="fonte"><cite>Semina: Ciências Exatas e Tecnológicas</cite>, v. 43, n. 1, p. 51-66. <a href="https://doi.org/10.5433/1679-0375.2022v43n1espp51">doi:10.5433/1679-0375.2022v43n1espp51</a></span>
+            </div>
           </li>
         </ul>
-      </section>
+      </div>
+    </section>
+  </main>
 
-      <section aria-labelledby="projetos">
-        <h2 id="projetos">Projetos abertos</h2>
-        <article class="projeto">
-          <h3><a href="https://github.com/juniormarorganista/PhD-Thesis-Organista-J-USP">Código e dados da tese</a></h3>
-          <p>Os programas de referência em Fortran, uma biblioteca Python que reproduz o solver de quarta ordem até a precisão de máquina, 508 testes automatizados e conjuntos de dados prontos para aprendizado de máquina. É o material que sustenta o artigo de 2026.</p>
-          <p class="meta">Fortran · Python · NumPy · pytest</p>
-        </article>
-        <article class="projeto">
-          <h3><a href="https://github.com/juniormarorganista/CES-Controle-Entradas-Saidas">CES - Controle de Entradas e Saídas</a></h3>
-          <p>Calculadora de horário de saída para Windows, que avisa antes de a jornada se completar para evitar hora extra. Executável de menos de 50 KB, sem instalação e sem acesso à rede. O repositório traz scripts para auditar o que o binário é capaz de fazer e para conferir que ele saiu do código publicado.</p>
-          <p class="meta">C# · .NET Framework · Windows · licença MIT</p>
-        </article>
-      </section>
-    </main>
-
-    <footer>
-      <p>Atualizada em novembro de 2026. <a href="https://github.com/juniormarorganista/juniormarorganista.github.io">Código desta página</a>.</p>
-    </footer>
-  </div>
+  <footer class="rodape">
+    <div class="conteiner">
+      <p>Juniormar Organista · atualizada em novembro de 2026</p>
+      <p><a href="https://github.com/juniormarorganista/juniormarorganista.github.io">Código desta página</a></p>
+    </div>
+  </footer>
 </body>
 </html>
