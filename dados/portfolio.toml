@@ -1,0 +1,43 @@
+# Postagens publicadas no LinkedIn, da mais recente para a mais antiga.
+#
+# A cada postagem nova: acrescentar um bloco [[postagem]] no topo da lista e rodar
+#
+#     py ferramentas/portfolio.py
+#
+# que reescreve a seção "Portfólio" das duas páginas (index.html e en/index.html).
+#
+# Campos:
+#   data      ano e mês da publicação, "AAAA-MM"
+#   projeto   nome do projeto, como aparece no site
+#   titulo_*  título curto da postagem, em português e em inglês
+#   resumo_*  uma ou duas frases sobre o que a postagem mostra, no tom do resto do site
+#   imagem    caminho a partir da raiz do site; a imagem tem de já ter sido publicada
+#   alt_*     descrição da imagem para leitor de tela
+#   link      endereço da postagem no LinkedIn; vazio leva à página de atividade do perfil
+#
+# Só entra aqui o que já está público no LinkedIn. Projeto de código privado é
+# descrito pelo que a postagem disse, sem link para o repositório.
+
+[[postagem]]
+data = "2026-11"
+projeto = "CNPJ Analytics"
+titulo_pt = "O que o dado público sabe sobre um CNPJ"
+titulo_en = "What public data knows about a Brazilian company"
+resumo_pt = "Apresentação do CNPJ Analytics e do primeiro achado: o porte \"05 (Demais)\" da Receita Federal reúne 14,9 milhões de CNPJs sem separar média de grande empresa, e 38% desse bloco não é empresa."
+resumo_en = "Introduces CNPJ Analytics and its first finding: the Federal Revenue size code \"05 (Others)\" groups 14.9 million registrations without telling medium from large companies, and 38% of that block are not companies at all."
+imagem = "img/cnpj-capa.webp"
+alt_pt = "Capa do carrossel do CNPJ Analytics: porte, situação e risco de cada CNPJ do Brasil, a partir de dados públicos"
+alt_en = "Cover of the CNPJ Analytics carousel: size, status and risk of every Brazilian company, from public data"
+link = ""
+
+[[postagem]]
+data = "2026-11"
+projeto = "CES - Controle de Entradas e Saídas"
+titulo_pt = "Um despertador do fim da jornada"
+titulo_en = "An alarm clock for the end of the working day"
+resumo_pt = "Lançamento do CES em código aberto: calcula o horário de saída a partir da entrada e do almoço e avisa aos 15, 10 e 5 minutos do fim, para que a jornada se cumpra sem hora extra."
+resumo_en = "Open-source release of CES: it works out the end of the working day from the start and lunch times and warns at 15, 10 and 5 minutes, so the day is completed without overtime."
+imagem = "img/ces-janela.png"
+alt_pt = "Janela do CES com a saída prevista às 17:00"
+alt_en = "The CES window showing the end of the day at 17:00"
+link = ""
